@@ -1,3 +1,15 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Остальной код */
+
 :root {
     --main-focus-hover-color: #2196f3; /*переменная для цвета навигации сайта при состоянии :ховер и :фокус*/
     --main-logo-color-primary: #2196f3; /*пересенная для цвета первой половины логотипа */
@@ -24,6 +36,16 @@ a {
 
 li {
     list-style: none;
+}
+
+/*
+
+класс для блока Header
+
+*/
+
+header {
+    display: inline-block;
 }
 
 /*
@@ -124,6 +146,7 @@ li {
     font-size: 26px;
     font-weight: bold;
     color: var(--main-logo-color-secondary-header);
+    border: 3px, solid, tomato;
 }
 
 .logo-primary {

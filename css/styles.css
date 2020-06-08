@@ -20,6 +20,8 @@ html {
     --link-break-color: #000000; /*переменная для цвета текста ссылок по дефолту*/
     --nav-project-link-color: #ffffff; /*переменная для цвета ссылок в секции по навигации по проектам для :ховер и :фокус*/
     --advantages-header-text-color: #212121; /*переменная для двета заголовков на странице индекс в секции преимуществ*/
+    --logo-secondary-footer: #ffffff; /*переменная для цвета лого в футере*/
+    --footer-header3-styles-color: #ffffff; /*Переменная для цвета заголовков h3 в футере*/
     /*--advantages-paragraph-text-color: #757575; переменная для двета текста параграфа на странице индекс в секции преимуществ*/
     /* --footer-address-text:;
     --footer-contacts-text:; */
@@ -44,9 +46,9 @@ li {
 
 */
 
-header {
+/* header {
     display: inline-block;
-}
+} */
 
 /*
 
@@ -141,16 +143,59 @@ header {
     border-radius: 4px;
 }
 
+/*
+
+классы для стилизации логотипа
+
+*/
+
+.link-logo-header {
+    display: inline-block;
+    outline: 3px solid tomato;
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-left: 215px;
+    /* margin-right: 1232px; */
+}
+
+.link-logo-footer {
+    display: inline-block;
+    outline: 3px solid tomato;
+    margin-top: 48px;
+    margin-bottom: 10px;
+    margin-left: 214px;
+    /* margin-right: 1232px; */
+}
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: bold;
     color: var(--main-logo-color-secondary-header);
-    border: 3px, solid, tomato;
 }
 
 .logo-primary {
     color: var(--main-logo-color-primary);
+}
+
+.logo-secondary-footer {
+    color: var(--logo-secondary-footer);
+}
+
+.header-nav-links {
+    outline: 3px solid tomato;
+    margin-top: 32px;
+    margin-bottom: 0px;
+    margin-left: 453px;
+    margin-right: 853px;
+}
+
+.contacts-nav-links {
+    outline: 3px solid tomato;
+    margin-top: 21px;
+    margin-bottom: 22px;
+    margin-left: 1042px;
+    margin-right: 200px;
 }
 
 .link-header-text {
@@ -197,13 +242,34 @@ header {
     color: var(--main-paragraph-color);
 }
 
+.footer-styles {
+    height: 253px;
+    background-color: #2f303a;
+}
+
+.footer-header3-styles-color h3 {
+    color: var(--footer-header3-styles-color);
+    text-transform: uppercase;
+}
+
 .footer-address-text p {
-    -style: normal;
+    outline: 3px solid tomato;
+    margin-top: 10px;
+    margin-bottom: 9px;
+    margin-left: 214px;
+    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #ffffff;
+}
+
+.footer-contacts-list {
+    outline: 3px solid tomato;
+    margin-bottom: 88px;
+    margin-left: 214px;
+    padding: 0px;
 }
 
 .footer-contacts-text a {

@@ -1,0 +1,193 @@
+:root {
+    --main-focus-hover-color: #2196f3; /*переменная для цвета навигации сайта при состоянии :ховер и :фокус*/
+    --main-logo-color-primary: #2196f3; /*пересенная для цвета первой половины логотипа */
+    --main-logo-color-secondary-header: #000000; /*пересенная для цвета второй половины логотипа в хедере*/
+    --main-logo-color-secondary-footer: #ffffff; /*пересенная для цвета второй половины логотипа в хедере*/
+    --main-headers-color: #212121; /*переменная для цвета текста заголовков*/
+    --main-paragraph-color: #757575; /*переменная для цвета текста в параграфах*/
+    --link-break-color: #000000; /*переменная для цвета текста ссылок по дефолту*/
+    --nav-project-link-color: #ffffff; /*переменная для цвета ссылок в секции по навигации по проектам для :ховер и :фокус*/
+    --advantages-header-text-color: #212121; /*переменная для двета заголовков на странице индекс в секции преимуществ*/
+    /*--advantages-paragraph-text-color: #757575; переменная для двета текста параграфа на странице индекс в секции преимуществ*/
+    /* --footer-address-text:;
+    --footer-contacts-text:; */
+    /* --main-text-font-family: Roboto, sans-serif; */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*
+
+класс для свойств заголовков Н3 на странице индекс в секции преимуществ
+
+*/
+.advantages-header-text h3 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--advantages-header-text-color);
+}
+/*
+
+класс для свойств параграфов на странице индекс в секции преимуществ
+
+*/
+.advantages-paragraph-text p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--main-paragraph-color);
+}
+
+/*
+
+класс для свойств заголовков Н2 на странице индекс
+
+*/
+
+.main-header2-style {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-headers-color);
+}
+
+/*
+
+класс для свойств заголовков Н3 на странице индекс в секции команды
+
+*/
+.team-header-text h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-headers-color);
+}
+
+/*
+
+класс для свойств параграфов на странице индекс в секции команды
+
+*/
+
+.team-paragraph-text p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-paragraph-color);
+}
+
+.nav-project-styles {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 54px;
+    letter-spacing: 0.06em;
+    color: var(--main-headers-color);
+}
+
+.nav-project-styles:hover,
+.nav-project-styles:focus {
+    /* font-family: var(--main-text-font-family); */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 54px;
+    letter-spacing: 0.06em;
+    color: var(--nav-project-link-color);
+    background-color: var(--main-focus-hover-color);
+    padding: 0px;
+    border-radius: 4px;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--main-logo-color-secondary-header);
+}
+
+.logo-primary {
+    color: var(--main-logo-color-primary);
+}
+
+.link-header-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--main-headers-color);
+}
+
+.link-header-text:hover,
+.link-header-text:focus {
+    color: var(--main-focus-hover-color);
+}
+
+.hero-caption {
+    text-transform: uppercase;
+}
+
+.link-break-styles {
+    color: var(--link-break-color);
+}
+
+.link-button {
+    background-color: var(--main-focus-hover-color);
+    color: #ffffff;
+    padding: 0px;
+    border-radius: 4px;
+}
+
+.text-header2-style h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+    color: var(--main-headers-color);
+}
+.text-paragraph-style p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--main-paragraph-color);
+}
+
+.footer-address-text p {
+    -style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+.footer-contacts-text a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}

@@ -1,17 +1,9 @@
 :root {
-    --main-focus-hover-color: #2196f3; /*переменная для цвета навигации сайта при состоянии :ховер и :фокус*/
-    --main-logo-color-primary: #2196f3; /*пересенная для цвета первой половины логотипа */
-    --main-logo-color-secondary-header: #000000; /*пересенная для цвета второй половины логотипа в хедере*/
-    --main-logo-color-secondary-footer: #ffffff; /*пересенная для цвета второй половины логотипа в хедере*/
-    --main-headers-color: #212121; /*переменная для цвета текста заголовков*/
+    --main-accent-color: #2196f3; /*цвет для интерактивных элементов*/
+    --alternative-text-color: #ffffff; /*второй главный цвет*/
+    --header-text-color: #212121; /*переменная для цвета текста заголовков*/
     --main-paragraph-color: #757575; /*переменная для цвета текста в параграфах*/
-    --link-break-color: #000000; /*переменная для цвета текста ссылок по дефолту*/
-    --nav-project-link-color: #ffffff; /*переменная для цвета ссылок в секции по навигации по проектам для :ховер и :фокус*/
-    --advantages-header-text-color: #212121; /*переменная для двета заголовков на странице индекс в секции преимуществ*/
-    /*--advantages-paragraph-text-color: #757575; переменная для двета текста параграфа на странице индекс в секции преимуществ*/
-    /* --footer-address-text:;
-    --footer-contacts-text:; */
-    /* --main-text-font-family: Roboto, sans-serif; */
+    --main-text-color: #000000; /*Первый главный цвет*/
 }
 
 body {
@@ -64,7 +56,7 @@ li {
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-headers-color);
+    color: var(--header-text-color);
 }
 
 /*
@@ -78,7 +70,7 @@ li {
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-headers-color);
+    color: var(--header-text-color);
 }
 
 /*
@@ -102,7 +94,7 @@ li {
     font-size: 18px;
     line-height: 54px;
     letter-spacing: 0.06em;
-    color: var(--main-headers-color);
+    color: var(--header-text-color);
 }
 
 .nav-project-styles:hover,
@@ -114,7 +106,7 @@ li {
     line-height: 54px;
     letter-spacing: 0.06em;
     color: var(--nav-project-link-color);
-    background-color: var(--main-focus-hover-color);
+    background-color: var(--main-accent-color);
     padding: 0px;
     border-radius: 4px;
 }
@@ -123,17 +115,17 @@ li {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: bold;
-    color: var(--main-logo-color-secondary-header);
+    color: var(--main-text-color);
 }
 
 .logo-primary {
-    color: var(--main-logo-color-primary);
+    color: var(--main-accent-color);
 }
 
 .link-header-text {
     font-size: 14px;
     font-weight: 500;
-    color: var(--main-headers-color);
+    color: var(--header-text-color);
 }
 
 .link-header-text:hover,
@@ -146,7 +138,7 @@ li {
 }
 
 .link-break-styles {
-    color: var(--link-break-color);
+    color: var(--main-text-color);
 }
 
 .link-button {
@@ -163,7 +155,7 @@ li {
     line-height: 36px;
     /* identical to box height, or 200% */
     letter-spacing: 0.06em;
-    color: var(--main-headers-color);
+    color: var(--header-text-color);
 }
 .text-paragraph-style p {
     font-style: normal;

@@ -63,7 +63,8 @@ h4 {
 класс контейнер
 
 */
-.container {
+.container,
+.header-container {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
@@ -71,10 +72,6 @@ h4 {
     padding-right: 15px;
     outline: 2px solid tomato;
 }
-
-/* .container:last-child {
-    margin-bottom: 94px;
-} */
 
 /*
 
@@ -158,19 +155,17 @@ h4 {
 
 */
 
-.footer-container{
+/* .footer-container {
     margin-left: auto;
     margin-right: auto;
-    width: 1600px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     outline: 2px solid tomato;
-}
-}
-
+} */
 
 .footer-site {
-    background-color: var(--footer-bgr-color);
+    background-color: #2f303a;
     height: 253px;
 }
 

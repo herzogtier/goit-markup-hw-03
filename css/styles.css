@@ -14,6 +14,7 @@ html {
     --header-text-color: #212121; /*переменная для цвета текста заголовков*/
     --main-paragraph-color: #757575; /*переменная для цвета текста в параграфах*/
     --main-text-color: #000000; /*Первый главный цвет*/
+    --footer-bgr-color: #2f303a;
 }
 
 body {
@@ -28,10 +29,21 @@ li {
     list-style: none;
 }
 
-ul {
-    padding-left: 0px;
+h1,
+h2,
+h3,
+h4 {
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    /* padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px; */
 }
 
 /*
@@ -54,24 +66,149 @@ ul {
 .container {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 188px;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     outline: 2px solid tomato;
 }
 
-.container:last-child {
+/* .container:last-child {
     margin-bottom: 94px;
-}
+} */
 
-.header-container {
+/*
+
+                                КЛАССЫ ДЛЯ РАБОТЫ ХЕДЕРА
+
+*/
+
+.header-flex-container,
+.header-link-list,
+.nav-flex-container,
+.footer-flex-container,
+.hero-section {
     display: flex;
-    flex-direction: row;
 }
 
-.header-container div {
+.header-flex-container {
+    align-items: center;
+}
+
+.header-contact {
+    margin-left: 355px;
+}
+
+/* .header-flex-container div {
     justify-content: left;
+} */
+
+/* .header-link-list li {
+    outline: 2px solid tomato;
+} */
+
+.header-link-item {
+    line-height: 80px;
+}
+
+.header-link-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-logo {
+    align-items: center;
+}
+
+.nav-link {
+    margin-left: 85px;
+}
+
+/*
+
+                                КЛАССЫ ДЛЯ БЛОКА ГЕРОЙ
+
+*/
+.hero-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+    background-color: rosybrown;
+}
+
+.hero-section {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.hero-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+/*
+
+                                КЛАССЫ ДЛЯ РАБОТЫ ФУТЕРА
+
+*/
+
+.footer-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
+}
+
+
+.footer-site {
+    background-color: var(--footer-bgr-color);
+    height: 253px;
+}
+
+.footer-address {
+    margin-top: 48px;
+}
+
+/*
+БЛОК ПРИСОЕДЕНЯЙТЕСЬ
+*/
+.footer-join-us {
+    margin-top: 56px;
+    margin-left: 69px;
+}
+
+.footer-join-us-list {
+    margin-top: 21px;
+}
+
+.footer-join-us-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-header-join-us {
+    text-transform: uppercase;
+    color: var(--alternative-text-color);
+}
+
+/*
+БЛОК ДЛЯ КЛАССОВ С ЛОГО И АДРЕССОМ 
+*/
+.footer-text-paragraph {
+    font-style: normal;
+}
+
+.footer-link-address {
+    display: block;
+    margin-top: 9px;
 }
 /*
 
@@ -265,7 +402,13 @@ ul {
 }
 
 .hero-caption {
+    width: 696px;
+    text-align: center;
     text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    color: var(--alternative-text-color);
 }
 
 .link-break-styles {
@@ -275,8 +418,12 @@ ul {
 .link-button {
     background-color: var(--main-accent-color);
     color: var(--alternative-text-color);
-    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
     border-radius: 4px;
+    margin-top: 30px;
 }
 
 .text-header2-style h2 {

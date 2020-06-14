@@ -14,7 +14,9 @@ html {
     --header-text-color: #212121; /*переменная для цвета текста заголовков*/
     --main-paragraph-color: #757575; /*переменная для цвета текста в параграфах*/
     --main-text-color: #000000; /*Первый главный цвет*/
-    --footer-bgr-color: #2f303a;
+    --footer-bgr-color: #2f303a; /*цвет фона футера*/
+    --portfolio-button-color: #f5f4fa; /*цвет кнопок на странице портфолио*/
+    --portfolio-item-border: #eeeeee; /*цвет рамки карточек*/
 }
 
 body {
@@ -70,7 +72,7 @@ h4 {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 /*
@@ -83,9 +85,30 @@ h4 {
 .header-link-list,
 .nav-flex-container,
 .footer-flex-container,
-.hero-section {
+.hero-section,
+.index-main-section {
     display: flex;
 }
+
+.index-main-section {
+    flex-wrap: wrap;
+}
+
+.section-index-margins {
+    margin-bottom: 188px;
+}
+
+.section-index-margins:first-child {
+    margin-top: 94px;
+}
+
+.section-index-margins:last-child {
+    margin-bottom: 94px;
+}
+
+/* .main-portfolio {
+    flex-wrap: wrap;
+} */
 
 .header-flex-container {
     align-items: center;
@@ -130,7 +153,7 @@ h4 {
     width: 1600px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
     background-color: rosybrown;
 }
 
@@ -357,7 +380,13 @@ h4 {
     font-size: 18px;
     line-height: 54px;
     letter-spacing: 0.06em;
+    background-color: var(--portfolio-button-color);
     color: var(--header-text-color);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-radius: 4px;
 }
 
 .nav-project-styles:hover,
@@ -370,8 +399,39 @@ h4 {
     letter-spacing: 0.06em;
     color: var(--alternative-text-color);
     background-color: var(--main-accent-color);
-    padding: 0px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
     border-radius: 4px;
+}
+
+.nav-porfolio-project {
+    margin-top: 174px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.nav-porfolio-project-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.portfolio-projects {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid var(--portfolio-item-border);
+}
+
+.main-portfolio {
+    margin-top: 50px;
+    margin-bottom: 94px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-projects:nth-child(3n) {
+    margin-right: 0px;
 }
 
 .logo {
@@ -429,6 +489,8 @@ h4 {
     /* identical to box height, or 200% */
     letter-spacing: 0.06em;
     color: var(--header-text-color);
+    padding-top: 20px;
+    padding-left: 20px;
 }
 .text-paragraph-style p {
     font-style: normal;
@@ -437,6 +499,7 @@ h4 {
     line-height: 30px;
     letter-spacing: 0.03em;
     color: var(--main-paragraph-color);
+    padding-left: 20px;
 }
 
 .footer-address-text p {

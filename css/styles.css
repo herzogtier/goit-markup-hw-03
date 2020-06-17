@@ -17,6 +17,7 @@ html {
     --footer-bgr-color: #2f303a; /*цвет фона футера*/
     --portfolio-button-color: #f5f4fa; /*цвет кнопок на странице портфолио*/
     --portfolio-item-border: #eeeeee; /*цвет рамки карточек*/
+    --team-section-bgr-color: #f5f4fa; /*цвет фона в секции наша команда*/
 }
 
 body {
@@ -27,9 +28,9 @@ a {
     text-decoration: none;
 }
 
-li {
+/* li {
     list-style: none;
-}
+} */
 
 h1,
 h2,
@@ -49,24 +50,11 @@ h4 {
 }
 
 /*
-класс для свойств заголовков Н3 на странице индекс в секции преимуществ
-*/
-.advantages-header-text h3 {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--header-text-color);
-}
-
-/*
 
 класс контейнер
 
 */
-.container,
-.header-container {
+.container {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
@@ -86,29 +74,27 @@ h4 {
 .nav-flex-container,
 .footer-flex-container,
 .hero-section,
-.index-main-section {
+.universal-list-item,
+.advantages,
+.team-socnetwork-list {
     display: flex;
 }
 
+/*утилитарный стиль для списков*/
+
+.universal-list-item {
+    justify-content: space-between;
+}
+
 .index-main-section {
     flex-wrap: wrap;
 }
 
-.section-index-margins {
-    margin-bottom: 188px;
+.section-index-paddings {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    /* background-color: tomato; */
 }
-
-.section-index-margins:first-child {
-    margin-top: 94px;
-}
-
-.section-index-margins:last-child {
-    margin-bottom: 94px;
-}
-
-/* .main-portfolio {
-    flex-wrap: wrap;
-} */
 
 .header-flex-container {
     align-items: center;
@@ -117,14 +103,6 @@ h4 {
 .header-contact {
     margin-left: auto;
 }
-
-/* .header-flex-container div {
-    justify-content: left;
-} */
-
-/* .header-link-list li {
-    outline: 2px solid tomato;
-} */
 
 .header-link-item {
     line-height: 80px;
@@ -153,7 +131,6 @@ h4 {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    /* outline: 2px solid tomato; */
     background-color: rosybrown;
 }
 
@@ -161,7 +138,6 @@ h4 {
     padding-top: 300px;
     padding-bottom: 300px;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -235,36 +211,38 @@ h4 {
 */
 
 /*
-класс для флекс секции преимуществ
-*/
-.advantages {
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: space-between;
-}
-
-/*
 класс для элементов листа секции преимуществ
 */
 
 .advantages-list-item {
-    width: 270px;
+    width: calc((100% - 90px) / 4);
 }
 
 .advantages-list-item img {
-    display: flex;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 55px;
 }
 
 .advantages-list-item h3 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--header-text-color);
     margin-bottom: 10px;
 }
 
 .advantages-list-item p {
     margin-top: 0px;
     margin-bottom: 0px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--main-paragraph-color);
 }
 
 /* .advantages-list-item:not(:first-child) {
@@ -288,22 +266,15 @@ h4 {
 
 */
 
-.work-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .work-list-item {
-    width: 370px;
-    /* margin-right: 30px; */
+    width: calc((100% - 60px) / 3);
 }
 
-.work-list-item:last-child {
-    margin-right: 0px;
-}
+/*
+                        КЛАСС ДЛЯ ТЕКСТА НАЛОЖЕННОГО НА КАРТИНКУ (ПОКА ОТКЛЮЧЕН)
+*/
 
-.work-list a {
+/* .work-list a {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -312,19 +283,13 @@ h4 {
     color: white;
     align-items: center;
     justify-content: center;
-}
+} */
 
 /*
 
                         КЛАССЫ ДЛЯ РАБОТЫ СЕКЦИИ "НАША КОМАНДА"
 
 */
-
-.team-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 /*
 класс для свойств заголовков Н3 на странице индекс в секции команды
@@ -336,6 +301,7 @@ h4 {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--header-text-color);
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -353,12 +319,17 @@ h4 {
     margin-bottom: 28px;
 }
 
+.team-list-item {
+    padding-bottom: 24px;
+    /* outline: 2px solid tomato; */
+}
+
+.team-section {
+    background-color: var(--team-section-bgr-color);
+}
+
 .team-socnetwork-list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 36px;
 }
 
 /*
@@ -366,13 +337,6 @@ h4 {
                             КЛАССЫ ДЛЯ РАБОТЫ С СЕКЦИЕЙ ПОСТОЯННЫХ КЛИЕНТОВ
 
 */
-
-.client-list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .nav-project-styles {
     font-style: normal;

@@ -153,10 +153,12 @@ h4 {
                                 КЛАССЫ ДЛЯ РАБОТЫ ФУТЕРА
 
 */
-
 .footer-site {
     background-color: #2f303a;
-    /* height: 253px; */
+}
+
+.footer-flex-container {
+    align-items: baseline;
 }
 
 .footer-address {
@@ -167,7 +169,6 @@ h4 {
 БЛОК ПРИСОЕДЕНЯЙТЕСЬ
 */
 .footer-join-us {
-    margin-top: 56px;
     margin-left: 69px;
 }
 

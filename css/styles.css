@@ -156,7 +156,7 @@ h4 {
 
 .footer-site {
     background-color: #2f303a;
-    height: 253px;
+    /* height: 253px; */
 }
 
 .footer-address {
@@ -194,6 +194,20 @@ h4 {
 .footer-link-address {
     display: block;
     margin-top: 9px;
+}
+
+.footer-copyright {
+    padding-top: 18px;
+    padding-bottom: 21px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.copyright-box {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 28px;
 }
 /*
 

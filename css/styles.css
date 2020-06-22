@@ -409,14 +409,25 @@ h4 {
     margin-bottom: 30px;
 }
 
+.card {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
 .card-content {
     background: #ffffff;
+    box-sizing: border-box;
+    padding: 20px 24px;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
-    box-sizing: border-box;
-    border-radius: 5px;
-    padding: 20px 24px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 /* .portfolio-projects a {
@@ -507,6 +518,7 @@ h4 {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
+    margin-bottom: 0px;
     color: var(--main-paragraph-color);
 }
 

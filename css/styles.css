@@ -519,6 +519,7 @@ h4 {
     line-height: 30px;
     letter-spacing: 0.03em;
     margin-bottom: 0px;
+    margin-top: 0px;
     color: var(--main-paragraph-color);
 }
 

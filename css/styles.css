@@ -78,6 +78,7 @@ h4 {
 
 .header-flex-container,
 .header-link-list,
+.header-contact-list,
 .nav-flex-container,
 .footer-flex-container,
 .hero-section,
@@ -150,6 +151,16 @@ h4 {
     padding-bottom: 212px;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.hero-caption {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    color: var(--alternative-text-color);   
 }
 
 /* .hero-button {
@@ -481,9 +492,11 @@ h4 {
 }
 
 .link-header-text {
+    display: block;
     font-size: 14px;
     font-weight: 500;
     color: var(--header-text-color);
+    line-height: 80px;
 }
 
 .link-header-text:hover,
@@ -491,17 +504,49 @@ h4 {
     color: var(--main-accent-color);
 }
 
-.hero-caption {
-    /* width: 696px; */
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    color: var(--alternative-text-color);
-    /* border: 1px solid #000000; */
-    /* -webkit-text-stroke: 1.2px #000000; */
+.link-contact-text{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--header-text-color);
+    line-height: 80px;
 }
+
+.link-contact-text:hover,
+.link-contact-text:focus {
+    color: var(--main-accent-color);
+}
+
+.link-contact-text::before{
+    align-items: center;
+    content: "";
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-image: url('../images/envelope-unhover.svg');
+    /* background-color: red; */
+    /* background-size: contain; */
+
+}
+
+
+/* .contact-mail {
+} */
+/* .header-link-item::before {
+    content: '';
+    width: 16px;
+    height: 11px;
+    margin-right: 10px;
+    background-color: red;
+    background-size: contain; */
+    /* background-image: url('../images/envelope-unhover.svg'); */
+}
+
+
+
 
 .link-break-styles {
     display: block;
@@ -581,3 +626,4 @@ h4 {
     margin-top: 0px;
     margin-bottom: 50px;
 }
+

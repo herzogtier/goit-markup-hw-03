@@ -32,6 +32,12 @@ a {
     list-style: none;
 } */
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -300,14 +306,14 @@ h4 {
 /*
 класс для свойств заголовков Н3 на странице индекс в секции команды
 */
-.team-header-text h3 {
+.team-header-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--header-text-color);
-    margin-top: 30px;
+    /* margin-top: 30px;*/
     margin-bottom: 10px;
 }
 
@@ -315,18 +321,22 @@ h4 {
 класс для свойств параграфов на странице индекс в секции команды
 */
 
-.team-paragraph-text p {
+.team-paragraph-text {
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-paragraph-color);
+    margin-top: 0px;
     margin-bottom: 28px;
 }
 
 .team-list-item {
-    padding-bottom: 24px;
+    /* padding-bottom: 24px; */
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     /* outline: 2px solid tomato; */
 }
 
@@ -335,7 +345,14 @@ h4 {
 }
 
 .team-socnetwork-list {
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+.team-card {
+    padding-top: 30px;
+    padding-right: 32px;
+    padding-bottom: 36px;
+    padding-left: 32px;
 }
 
 /*
@@ -387,12 +404,19 @@ h4 {
 }
 
 .portfolio-projects {
-    /* width: 370px; */
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid var(--portfolio-item-border);
-    /* background-color: cadetblue; */
+}
+
+.card-content {
+    background: #ffffff;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px 24px;
 }
 
 /* .portfolio-projects a {
@@ -447,7 +471,14 @@ h4 {
 }
 
 .link-break-styles {
+    display: block;
     color: var(--main-text-color);
+    /* outline: 2px solid tomato; */
+}
+
+.card-img {
+    display: block;
+    /* outline: 1px solid tomato; */
 }
 
 .link-button {
@@ -461,25 +492,22 @@ h4 {
     margin-top: 30px;
 }
 
-.text-header2-style h2 {
+.text-header2-style {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 36px;
-    /* identical to box height, or 200% */
     letter-spacing: 0.06em;
     color: var(--header-text-color);
-    padding-top: 20px;
-    padding-left: 20px;
 }
-.text-paragraph-style p {
+
+.text-paragraph-style {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
     color: var(--main-paragraph-color);
-    padding-left: 20px;
 }
 
 .footer-address-text p {
